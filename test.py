@@ -26,14 +26,23 @@ print("charlie test: ", char_read == db["charlie"])
 
 
 # db for update test
-db_update = {
+db2 = {
     "alice": {"role": "admin", "email": "alice@example.com"},
     "bob": {"role": "user", "email": "bob@example.com"},
     "diana": {"role": "moderator", "email": "diana@example.com"},
     "diana": {"role": "admin", "email": "diana@example.com"},
 }
 # update test
-main.update(db_update,"diana", "user")
-print("update test", db_update)
+main.update(db2,"diana", "user")
+print("update test", db2)
 
 
+db3= {
+    "alice": {"role": "admin", "email": "alice@example.com"},
+    "bob": {"role": "user", "email": "bob@example.com"},
+    "charlie": {"role": "user", "email": "charlie@example.com"},
+}
+
+# delete test
+main.delete(db3,"charlie")
+print("delete test", db3)

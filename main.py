@@ -20,7 +20,7 @@ def create(data, name,rank,login):
 def read(data, name):
     return data[name]
 
-# updates a user's rank OR login
+# updates a user's rank OR login !!!(we could add more option here)!!!
 def update(data, name, rank):
     for user in data:
         if user == name:
@@ -28,6 +28,7 @@ def update(data, name, rank):
 
 
 # delete all info of user
-#def destroy(name):
-
+def delete(data, name):
+    del data[name]
+            
 
