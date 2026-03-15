@@ -13,18 +13,18 @@ db= {
 
 
 # create new user in database with rank and login
-def create(name,rank,login):
-
+def create(data, name,rank,login):
+    data[name] = {"role": rank, "email": login}
 
 # given name, read user rank and login
-def read(name):
+#def read(name):
 
 
 # updates a user's rank OR login
-def update(name, rank, login):
+#def update(name, rank, login):
 
 
 # delete all info of user
-def destroy(name):
+#def destroy(name):
 
 
