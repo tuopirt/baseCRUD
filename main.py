@@ -21,7 +21,10 @@ def read(data, name):
     return data[name]
 
 # updates a user's rank OR login
-#def update(name, rank, login):
+def update(data, name, rank):
+    for user in data:
+        if user == name:
+            data[name]["role"] = rank
 
 
 # delete all info of user
