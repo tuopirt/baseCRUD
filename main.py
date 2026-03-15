@@ -17,8 +17,8 @@ def create(data, name,rank,login):
     data[name] = {"role": rank, "email": login}
 
 # given name, read user rank and login
-#def read(name):
-
+def read(data, name):
+    return data[name]
 
 # updates a user's rank OR login
 #def update(name, rank, login):
